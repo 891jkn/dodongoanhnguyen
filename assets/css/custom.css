@@ -107,6 +107,10 @@
 .sticky-top{
     position: fixed;
     top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 @media (max-width: 1200px) { 
     .main-nav .nav-link{
@@ -184,6 +188,7 @@
 }
 
  .show-main-nav{
+     z-index: 99;
     position: fixed!important;
     left:0!important;
     transition: 0.2s ease!important;
