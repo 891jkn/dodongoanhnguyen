@@ -29,6 +29,7 @@ const handleToggler = (event)=>{
         if(!navbar.classList.contains("show-main-nav")){
             navbarTogglerBtn.classList.add("btn-toggler-show")
             navbar.classList.add("show-main-nav")
+            navbar.classList.remove('sticky-top')
             subNav.classList.remove('sticky-top')
         }
     }else{
