@@ -1,20 +1,13 @@
 let navbarTogglerBtn = document.getElementById("navbar-toggler-btn")
 let navbar = document.querySelector(".main-nav")
 let closer = document.getElementById("toggler-close-btn")
-// window.onclick = (e)=>{
-//     if(navbar.classList.contains("show-main-nav")){
-//         navbarTogglerBtn.classList.remove("btn-toggler-show")
-//         navbar.classList.remove("show-main-nav")
-//     }
-// }
-// let backDrop = document.querySelector(".back-drop")
 let togller = 0;
 closer.addEventListener('click',(e)=>{
-        togller = 0
-        if(navbar.classList.contains("show-main-nav")){
-            navbarTogglerBtn.classList.remove("btn-toggler-show")
-            navbar.classList.remove("show-main-nav")
-        }
+    togller = 0
+    if(navbar.classList.contains("show-main-nav")){
+        navbarTogglerBtn.classList.remove("btn-toggler-show")
+        navbar.classList.remove("show-main-nav")
+    }
 })
 
 window.onresize = (e)=>{
@@ -43,8 +36,17 @@ const handleToggler = (event)=>{
         }
     }
 }
+
+window.addEventListener('scroll',(e)=>{
+    if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 20){
+        navbar.classList.add('sticky-top')
+    }else{
+        navbar.classList.remove('sticky-top')
+    }
+})
 navbarTogglerBtn.addEventListener('click',handleToggler)
 
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel();
-  });
+  
+});
