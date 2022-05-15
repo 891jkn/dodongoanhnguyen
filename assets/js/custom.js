@@ -44,3 +44,7 @@ const handleToggler = (event)=>{
     }
 }
 navbarTogglerBtn.addEventListener('click',handleToggler)
+
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel();
+  });

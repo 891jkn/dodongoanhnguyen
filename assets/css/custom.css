@@ -36,13 +36,47 @@
     border: none;
     outline: none;
 }
-
+.introduce-artis{
+    background-image: url("../images/backchitiettintuc.png");
+    background-size: cover;
+}
+.introduce-artis .title{
+    font-size: 48px!important;
+}
+.introduce-artis .sub-title{
+    font-size: 20px!important;
+}
+.introduce-artis .desc{
+    font-size: 14px!important;
+    letter-spacing: 1.5px;
+}
+.avatar-wraper{
+    overflow: hidden;
+    max-height: 334px!important;
+    min-height: 334px!important;
+    object-fit: cover;
+    border-radius: 50%;
+    max-width: 336px!important;
+}
+.avatar-wraper .avatar{
+    transform: scale(2);
+}
 @media (max-width: 576px) { 
     .main-nav .nav-link{
         font-size: .6rem!important;
     }
+    .avatar-wraper{
+        min-width: 215px!important;
+        max-width: 215px!important;
+        min-height: 215px!important;
+        max-height: 215px!important;
+        padding: 0!important;
+    }
 }
 
+.bg-product-card{
+    background-color: #e1decb!important;
+}
 @media (max-width: 768px) { 
     .main-nav .nav-link{
         font-size: .7rem!important;
@@ -58,19 +92,37 @@
     #main-sidebar{
       
     }
+    .introduce-artis .title{
+        font-size: 36px;
+    }
+    .introduce-artis .sub-title{
+        font-size: 18px;
+    }
+    .introduce-artis .desc{
+        font-size: 12px;
+        letter-spacing: 1.5px;
+    }
  }
+
 
 @media (max-width: 992px) { 
     .main-nav .nav-link{
         font-size: .6rem!important;
     }
+    
+
+
 }
 
 @media (max-width: 1200px) { 
     .main-nav .nav-link{
         font-size: .7rem!important;
     }
+    .introduce-artis .title{
+        font-size: 36px!important;
+    }
  }
+
  .back-drop{
     position: absolute;
     width: 100vw;
@@ -93,4 +145,9 @@
     right: 10px;
     cursor: pointer;
     top: 10px;
+}
+.good-project{
+    background-image: url("../images/product-introduce-bg.png");
+    background-size: cover;
+    background-position: top;
 }
