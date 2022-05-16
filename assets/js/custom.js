@@ -70,23 +70,3 @@ navbarTogglerBtn.addEventListener('click',handleToggler)
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel();
 });
-let rangeInput = document.getElementById("sliderRange")
-let outputValue = document.getElementById("valueRange")
-outputValue.innerHTML = '0đ'
-rangeInput.addEventListener('input',(e)=>{
-    let value = e.target.value
-    let moneyFormatted = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(value)
-    outputValue.innerHTML = moneyFormatted
-})
-// rating
-// let listRating  = document.querySelectorAll(".product-rating")
-// const handleRating = (event)=>{
-//     let star = event.target.dataset.star
-//     if (star !== undefined){
-//         parseInt(star)
-//
-//     }
-// }
-// Array.from(listRating).map((val,index)=>{
-//     val.addEventListener('click',handleRating)
-// })
