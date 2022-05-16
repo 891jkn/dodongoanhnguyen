@@ -46,14 +46,14 @@ const handleToggler = (event)=>{
 
 window.addEventListener('scroll',(e)=>{
     if(document.body.clientWidth > 767){
-        if(document.body.scrollTop > 130 || document.documentElement.scrollTop > 130){
+        if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
             navbar.classList.add('sticky-top')
         }else{
             navbar.classList.remove('sticky-top')
         }
     }else{
         if(!togller){
-            if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 20){
+            if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
                 subNav.classList.add('sticky-top')
             }else{
                 subNav.classList.remove('sticky-top')
@@ -69,13 +69,24 @@ navbarTogglerBtn.addEventListener('click',handleToggler)
 
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel();
-  
 });
-
-var rangeslider = document.getElementById("sliderRange");
-var output = document.getElementById("valueRange");
-output.innerHTML = rangeslider.value;
-
-rangeslider.oninput = function() {
-    output.innerHTML = new Intl.NumberFormat('vi-VN').format(this.value);
-}
+let rangeInput = document.getElementById("sliderRange")
+let outputValue = document.getElementById("valueRange")
+outputValue.innerHTML = '0đ'
+rangeInput.addEventListener('input',(e)=>{
+    let value = e.target.value
+    let moneyFormatted = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(value)
+    outputValue.innerHTML = moneyFormatted
+})
+// rating
+// let listRating  = document.querySelectorAll(".product-rating")
+// const handleRating = (event)=>{
+//     let star = event.target.dataset.star
+//     if (star !== undefined){
+//         parseInt(star)
+//
+//     }
+// }
+// Array.from(listRating).map((val,index)=>{
+//     val.addEventListener('click',handleRating)
+// })
