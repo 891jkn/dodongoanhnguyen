@@ -46,7 +46,7 @@ const handleToggler = (event)=>{
 
 window.addEventListener('scroll',(e)=>{
     if(document.body.clientWidth > 767){
-        if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 20){
+        if(document.body.scrollTop > 130 || document.documentElement.scrollTop > 130){
             navbar.classList.add('sticky-top')
         }else{
             navbar.classList.remove('sticky-top')
@@ -71,3 +71,11 @@ $(document).ready(function(){
     $(".owl-carousel").owlCarousel();
   
 });
+
+var rangeslider = document.getElementById("sliderRange");
+var output = document.getElementById("valueRange");
+output.innerHTML = rangeslider.value;
+
+rangeslider.oninput = function() {
+    output.innerHTML = new Intl.NumberFormat('vi-VN').format(this.value);
+}
