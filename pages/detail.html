@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Destail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+          integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <style>
+        .bg-muted {
+            background-color: #efefef !important;
+        }
+
+        .list-image-preview li {
+            cursor: pointer;
+        }
+
+        .text-warning-60 {
+            opacity: .6;
+        }
+
+        .text-20 {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <!-- top banner -->
+    <div class="banner-wrap">
+        <div class="container mx-auto">
+            <div class="row align-items-center">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 py-2 text-center px-1 px-sm-0">
+                    <img src="../assets/images/logo.png" alt="logo" class="header-logo img-fluid">
+                </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 w-100">
+                    <div class="row d-flex justify-content-around align-items-center h-100">
+                        <div class="d-none d-md-block col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            <form action="">
+                                <input type="search" name="" class="px-2 py-1 border-0 rounded w-100">
+                            </form>
+                        </div>
+                        <div class="col-12 col-sm-12 pb-sm-0 col-md-6 col-lg-6 col-xl-6">
+                            <ul class="d-flex list-social-icon justify-content-end px-2 justify-content-sm-end justify-content-md-center align-items-center list-unstyled">
+                                <li class="d-none  d-md-inline">
+                                    <span class="fa-stack">
+                                        <i class="fas fa-circle text-white fa-stack-2x"></i>
+                                        <i class="fab fa-facebook text-dark fa-stack-1x fa-inverse"></i>
+                                      </span>
+                                </li>
+                                <li class="d-none  d-md-inline">
+                                    <span class="fa-stack">
+                                        <i class="fas fa-circle text-white fa-stack-2x"></i>
+                                        <i class="fab fa-youtube text-dark  fa-stack-1x fa-inverse"></i>
+                                      </span>
+                                </li>
+                                <li class="d-none  d-md-inline">
+                                    <span class="fa-stack">
+                                        <i class="fas fa-circle text-white fa-stack-2x"></i>
+                                        <i class="fab fa-linkedin text-dark fa-stack-1x fa-inverse"></i>
+                                      </span>
+                                </li>
+                                <li class="d-none  d-md-inline">
+                                    <span class="fa-stack">
+                                        <i class="fas fa-circle text-white fa-stack-2x"></i>
+                                        <i class="fab fa-instagram text-dark fa-stack-1x fa-inverse"></i>
+                                      </span>
+                                </li>
+                                <button class="d-block d-md-none rounded" id="navbar-toggler-btn" type="button"
+                                        data-show="0">
+                                    <span class="fa-stack">
+                                        <i class="fas fa-circle text-white fa-stack-2x"></i>
+                                        <i class="fas fa-bars text-dark fa-stack-1x fa-inverse"></i>
+                                      </span>
+                                </button>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end top banner -->
+    <!-- main nav -->
+    <div class="bg-main main-nav">
+        <div class="container m-auto">
+            <nav class="navbar navbar-expand-md navbar-dark px-5 py-2 py-md-2" id="main-nav">
+
+                <i class="d-block d-md-none fas fa-times text-dark" id="toggler-close-btn" data-hide="1"></i>
+
+                <div class="sidebar w-100" id="main-sidebar">
+
+                    <ul class="navbar-nav d-block d-md-flex justify-content-around align-items-center  w-100 py-2">
+                        <li class="nav-item px-2 py-md-0 py-2 d-block d-md-none">
+                            <img src="../assets/images/logo.png" class="img-fluid" alt="">
+                        </li>
+                        <li class="nav-item px-2 py-md-0 py-2"><a href="#" class="nav-link text-white">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item px-2 py-md-0 py-2"><a href="#" class="nav-link text-white">GIỚI THIỆU</a>
+                        </li>
+                        <li class="nav-item px-2 py-md-0 py-2"><a href="#" class="nav-link text-white">NGHÊ NHÂN</a>
+                        </li>
+                        <li class="nav-item px-2 py-md-0 py-2"><a href="#" class="nav-link text-white">SẢN PHẨM</a></li>
+                        <li class="nav-item px-2 py-md-0 py-2"><a href="#" class="nav-link text-white">CÔNG TRÌNH TIÊU
+                            BIỂU</a></li>
+                        <li class="nav-item px-2 py-md-0 py-2"><a href="#" class="nav-link text-white">TIN TỨC</a></li>
+                        <li class="nav-item px-2 py-md-0 py-2"><a href="#" class="nav-link text-white">LIÊN HỆ</a></li>
+                        <li class="nav-item px-2 py-md-0 py-2">
+                            <div class="d-block d-md-none">
+                                <form action="">
+                                    <input type="search" name="" class="px-2 border-0 rounded w-100"
+                                           id="header-search-input">
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- end main nav -->
+    <!-- start header banner -->
+</header>
+
+<!--content-->
+<div class="container m-auto px-md-5 px-4">
+    <div class="row mt-3">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 pr-md-4">
+            <div class="  mx-auto bg-muted my-3 p-1 p-md-3 rounded-20">
+                <div class="d-flex flex-column text-center pb-3 align-items-center px-md-3 justify-content-center">
+                    <img id="image-preview" class="" src="../assets/images/product_detail.png"/>
+                </div>
+                <ul class="d-flex list-image-preview list-unstyled justify-content-center align-items-center pb-2">
+                    <li class="nav-item p-1">
+                        <div class="container-fluid border border-dark d-flex justify-content-center align-items-center px-1 py-2">
+                            <img src="../assets/images/product_detail.png" class="w-100">
+                        </div>
+                    </li>
+                    <li class="nav-item p-1">
+                        <div class="container-fluid border border-dark d-flex justify-content-center align-items-center px-1 py-2">
+                            <img src="../assets/images/product_detail.png" class="w-100">
+                        </div>
+                    </li>
+                    <li class="nav-item p-1">
+                        <div class="container-fluid border border-dark d-flex justify-content-center align-items-center px-1 py-2">
+                            <img src="../assets/images/paris.jpg" class="w-100">
+                        </div>
+                    </li>
+                    <li class="nav-item p-1">
+                        <div class="container-fluid border border-dark d-flex justify-content-center align-items-center px-1 py-2">
+                            <img src="../assets/images/product_detail.png" class="w-100">
+                        </div>
+                    </li>
+                    <li class="nav-item p-1">
+                        <div class="container-fluid border border-dark d-flex justify-content-center align-items-center px-1 py-2">
+                            <img src="../assets/images/product_detail.png" class="w-100">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <ul class="d-flex list-social-icon justify-content-start px-2 align-items-center list-unstyled">
+                <li class="d-none d-md-inline">
+                    <span class="fa-stack">
+                        <i class="fas fa-circle text-main fa-stack-2x"></i>
+                        <i class="fab fa-facebook text-white fa-stack-1x fa-inverse"></i>
+                    </span>
+                </li>
+                <li class="d-none  d-md-inline">
+                    <span class="fa-stack">
+                        <i class="fas fa-circle text-main fa-stack-2x"></i>
+                        <i class="fab fa-youtube text-white  fa-stack-1x fa-inverse"></i>
+                    </span>
+                </li>
+                <li class="d-none  d-md-inline">
+                    <span class="fa-stack">
+                        <i class="fas fa-circle text-main fa-stack-2x"></i>
+                        <i class="fab fa-linkedin text-white fa-stack-1x fa-inverse"></i>
+                    </span>
+                </li>
+                <li class="d-none  d-md-inline">
+                    <span class="fa-stack">
+                        <i class="fas fa-circle text-main fa-stack-2x"></i>
+                        <i class="fab fa-instagram text-white fa-stack-1x fa-inverse"></i>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 py-md-4 px-2 pl-md-2">
+            <h3 class="text-main font-weight-bold">Trống Đồng Trang Trí</h3>
+            <div class="d-block d-sm-flex d-nd-flex justify-content-between align-items-center my-2">
+                <div class="d-flex justify-content-between align-items-center pr-md-1">
+                    <p class="text-warning font-weight-bold pr-2 text-warning-60 ">
+                        <del>1.200.000</del>
+                        đ
+                    </p>
+                    <p class="text-warning font-weight-bold pl-2 text-warning-60">1.100.000đ</p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center pt-2 pt-md-0 pl-md-2">
+                    <div class="d-flex justify-content-center align-items-center pr-2">
+                        <i class="small fas mx-1 fa-star text-warning"></i>
+                        <i class="small fas mx-1 fa-star text-warning"></i>
+                        <i class="small fas mx-1 fa-star text-warning"></i>
+                        <i class="small far mx-1 fa-star text-warning"></i>
+                        <i class="small far mx-1 fa-star text-warning"></i>
+                    </div>
+                    <a href="#"><i class="fas fa-heart text-main text-20"></i></a>
+                </div>
+            </div>
+            <hr class="my-3 border">
+            <p class="small font-italic">
+                Hình thức <b>Đặt Trước</b> áp dụng cho sản phẩm chờ hoàn thiện trên 7 ngày,
+                đơn hàng sẽ không được giao ngay tới khách hàng.
+            </p>
+            <br>
+            <p class="font-weight-bold d-flex justify-content-start align-items-center">
+                <i class="fas fa-heart text-main text-20 pr-2"></i> 37K người đã thích sản phẩm này
+            </p>
+            <br>
+            <p class="small">
+                Có một loài linh thú của Việt Nam không bao giờ bị nhầm lẫn với các nền
+                văn hóa khác như Trung Hoa, Nhật Bản, đó là Nghê. Người Việt thường nói
+                "Chó trực-nghệ trẩu", nếu loài chó để canh giữ nhà cửa ruộng vườn thì loài
+                Nghệ trấn giữ tâm linh và phong thủy.
+            </p>
+            <br>
+            <p><span class="font-weight-bold">Kích thước : </span> 30cm x 30cm x 30cm</p>
+            <p><span class="font-weight-bold">Chất liệu : </span> Đồng mạ vàng</p>
+            <br>
+            <button class="btn rounded px-5 py-2 bg-main text-warning"><h4>Liên hệ</h4></button>
+        </div>
+    </div>
+    <div class="row my-5">
+        <div class="col-12 text-center">
+            <h3 class="text-main font-weight-bold">Sản phẩm liên quan</h3>
+            <img src="../assets/images/good_projects_stiker.png">
+        </div>
+    </div>
+    <div class=" owl-carousel p-1 p-sm-2 p-md-3 p-lg-4">
+        <div class="p-3 p-sm-2 p-md-3 p-lg-4">
+            <div class="product-card shadow rounded-20 text-center p-2 mb-3">
+                <img src="../assets/images/product.png" class="w-100 pb-2" alt="">
+                <div class="d-flex justify-content-center align-items-center pb-4 product-rating">
+                    <i class="small fas mx-1 fa-star text-warning" data-star = "1"></i>
+                    <i class="small fas mx-1 fa-star text-warning" data-star = "2"></i>
+                    <i class="small fas mx-1 fa-star text-warning" data-star = "3"></i>
+                    <i class="small far mx-1 fa-star text-warning" data-star = "4"></i>
+                    <i class="small far mx-1 fa-star text-warning" data-star = "5"></i>
+                </div>
+            </div>
+            <a href="#" class="nav-link text-dark">
+                <h6 class="text-main">Tượng phật Thích Ca</h6>
+            </a>
+            <div class="d-flex justify-content-between align-items-end">
+                <strong class="small font-weight-normal">Tượng phật dát vàng</strong>
+                <h6 class="text-warning text-monospace">1.680.000đ</h6>
+            </div>
+        </div>
+        <div class="p-3 p-sm-2 p-md-3 p-lg-4">
+            <div class="product-card shadow rounded-20 text-center p-2 mb-3">
+                <img src="../assets/images/product.png" class="w-100 pb-2" alt="">
+                <div class="d-flex justify-content-center align-items-center pb-4 product-rating">
+                    <i class="small fas mx-1 fa-star text-warning" data-star = "1"></i>
+                    <i class="small fas mx-1 fa-star text-warning" data-star = "2"></i>
+                    <i class="small fas mx-1 fa-star text-warning" data-star = "3"></i>
+                    <i class="small far mx-1 fa-star text-warning" data-star = "4"></i>
+                    <i class="small far mx-1 fa-star text-warning" data-star = "5"></i>
+                </div>
+            </div>
+            <a href="#" class="nav-link text-dark">
+                <h6 class="text-main">Tượng phật Thích Ca</h6>
+            </a>
+            <div class="d-flex justify-content-between align-items-end">
+                <strong class="small font-weight-normal">Tượng phật dát vàng</strong>
+                <h6 class="text-warning text-monospace">1.680.000đ</h6>
+            </div>
+        </div>
+        <div class="p-3 p-sm-2 p-md-3 p-lg-4">
+            <div class="product-card shadow rounded-20 text-center p-2 mb-3">
+                <img src="../assets/images/product.png" class="w-100 pb-2" alt="">
+                <div class="d-flex justify-content-center align-items-center pb-4 product-rating">
+                    <i class="small fas mx-1 fa-star text-warning" data-star = "1"></i>
+                    <i class="small fas mx-1 fa-star text-warning" data-star = "2"></i>
+                    <i class="small fas mx-1 fa-star text-warning" data-star = "3"></i>
+                    <i class="small far mx-1 fa-star text-warning" data-star = "4"></i>
+                    <i class="small far mx-1 fa-star text-warning" data-star = "5"></i>
+                </div>
+            </div>
+            <a href="#" class="nav-link text-dark">
+                <h6 class="text-main">Tượng phật Thích Ca</h6>
+            </a>
+            <div class="d-flex justify-content-between align-items-end">
+                <strong class="small font-weight-normal">Tượng phật dát vàng</strong>
+                <h6 class="text-warning text-monospace">1.680.000đ</h6>
+            </div>
+        </div>
+        <div class="p-3 p-sm-2 p-md-3 p-lg-4">
+            <div class="product-card shadow rounded-20 text-center p-2 mb-3">
+                <img src="../assets/images/product.png" class="w-100 pb-2" alt="">
+                <div class="d-flex justify-content-center align-items-center pb-4 product-rating">
+                    <i class="small fas mx-1 fa-star text-warning" data-star = "1"></i>
+                    <i class="small fas mx-1 fa-star text-warning" data-star = "2"></i>
+                    <i class="small fas mx-1 fa-star text-warning" data-star = "3"></i>
+                    <i class="small far mx-1 fa-star text-warning" data-star = "4"></i>
+                    <i class="small far mx-1 fa-star text-warning" data-star = "5"></i>
+                </div>
+            </div>
+            <a href="#" class="nav-link text-dark">
+                <h6 class="text-main">Tượng phật Thích Ca</h6>
+            </a>
+            <div class="d-flex justify-content-between align-items-end">
+                <strong class="small font-weight-normal">Tượng phật dát vàng</strong>
+                <h6 class="text-warning text-monospace">1.680.000đ</h6>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-main container-fluid">
+    <div class="container m-auto py-3 px-5">
+        <div class="d-flex justify-content-center align-items-center">
+            <img src="../assets/images/logo.png" class="w-100" alt="">
+        </div>
+        <p class="text-center small  text-white my-3">
+            Doanh nghiệp đúc đồng Điệp Oanh là một trong những đơn vị đúc đồng và chế tác đồ đồng lớn của làng nghề tại
+            TT.Lâm - Ý Yên - Nam Định. Cơ sở sản xuất gồm ba phân xưởng chính cùng nhiều xưởng vệ tinh, Sở hữu một đội
+            ngũ các thợ giỏi và nghệ nhân xuất sắc, kinh nghiệm lâu năm Chúng tôi đã sản xuất hàng trăm loại sản phẩm
+            bằng đồng với mẫu mã và kích thước đa dạng, phong phú trong đó có các loại đồ thờ cúng,
+        </p>
+        <div class="row">
+            <div class="col">
+                <h5 class="text-center text-warning">Hệ thống showroom</h5>
+                <h6 class="text-center text-white small py-2">Điện thoại : (+84) 376658437</h6>
+                <h6 class="text-center text-white small">Email : đucongdiepoanh@gmail.com</h6>
+            </div>
+            <div class="col text-center">
+                <h5 class="text-center text-warning">Liên hệ</h5>
+                <h6 class="text-center text-white py-2 small">Điện thoại : (+84) 376658437</h6>
+                <h6 class="text-center text-white small">Địa chỉ : 264 Cầu Giấy , Hà Nội</h6>
+            </div>
+        </div>
+        <div class="row py-3">
+            <div class="col text-center">
+                <img src="../assets/images/good_projects_stiker.png" class="w-100" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h5 class="text-center text-warning">Kết nối với chúng tôi</h5>
+                <ul class="d-flex justify-content-center align-items-center list-unstyled my-3">
+                    <li>
+                        <span class="fa-stack">
+                            <i class="fas fa-circle text-white fa-stack-2x"></i>
+                            <i class="fab fa-facebook text-dark fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="fa-stack">
+                            <i class="fas fa-circle text-white fa-stack-2x"></i>
+                            <i class="fab fa-youtube text-dark  fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="fa-stack">
+                            <i class="fas fa-circle text-white fa-stack-2x"></i>
+                            <i class="fab fa-linkedin text-dark fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="fa-stack">
+                            <i class="fas fa-circle text-white fa-stack-2x"></i>
+                            <i class="fab fa-instagram text-dark fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-footer py-3">
+        <h6 class="text-center text-white small">Copyright 2006 - 2019 All Rights Reserved.Duc Dong Diep Oanh</h6>
+    </div>
+</footer>
+<script>
+    let imagePreview = document.getElementById('image-preview')
+    let listImage = document.querySelectorAll('.list-image-preview li img')
+    Array.from(listImage).forEach((val)=>{
+        val.addEventListener('click',(event)=>{
+            if(event.target.src !== undefined){
+                imagePreview.src = event.target.src
+            }
+        })
+    })
+</script>
+</body>
+<script src="../assets/js/jquery.slim.min.js"></script>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/owl.carousel.min.js"></script>
+<script src="../assets/js/custom.js"></script>
+</html>
