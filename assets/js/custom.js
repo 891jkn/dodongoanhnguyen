@@ -15,7 +15,9 @@ closer.addEventListener('click',(e)=>{
 window.onresize = (e)=>{
     if(window.screen.width >= 768){
         togller = 0
-        subNav.classList.remove('sticky-top')
+        if (subNav.classList.contains(('sticky-top'))){
+            subNav.classList.remove('sticky-top')
+        }
         if(navbar.classList.contains("show-main-nav")){
             navbarTogglerBtn.classList.remove("btn-toggler-show")
             navbar.classList.remove("show-main-nav")
@@ -43,7 +45,7 @@ const handleToggler = (event)=>{
 }
 
 window.addEventListener('scroll',(e)=>{
-    if(window.screen.width > 767){
+    if(document.body.clientWidth > 767){
         if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 20){
             navbar.classList.add('sticky-top')
         }else{

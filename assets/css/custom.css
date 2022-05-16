@@ -112,9 +112,36 @@
     justify-content: space-around;
     align-items: center;
 }
+/*news */
+.news-responsive-text-p{
+    font-size: 32px!important;
+}
+.news-responsive-text-title{
+    font-size:1.8rem!important;
+}
+.main-content{
+    background-image: url("../images/news_back.png");
+    background-size: cover;
+}
+/*end news*/
+/*global css*/
+.text-truncate-sm{
+
+}
+.border-main{
+    border-color:#661013!important ;
+}
+.font-weight-500{
+    font-weight: 500!important;
+}
+/*global css*/
+
 @media (max-width: 1200px) { 
     .main-nav .nav-link{
         font-size: .7rem!important;
+    }
+    .news-responsive-text-title{
+        font-size:1.7rem!important;
     }
     .introduce-artis .title{
         font-size: 36px!important;
@@ -139,6 +166,9 @@
     .main-nav .nav-link{
         font-size: .6rem!important;
     }
+     .news-responsive-text-title{
+         font-size:1.6rem!important;
+     }
     .introduce-product .image-card {
         min-height: 135px!important;
         max-height: 250px!important;
@@ -148,9 +178,14 @@
         min-height:135px!important;
     }
 }
+
+
 @media (max-width: 768px) { 
     .main-nav .nav-link{
         font-size: .7rem!important;
+    }
+    .news-responsive-text-title{
+        font-size:1.5rem!important;
     }
     .main-nav{
         position: fixed!important;
@@ -174,10 +209,18 @@
         letter-spacing: 1.5px;
     }
  }
- @media (max-width: 576px) { 
+ @media (max-width: 576px) {
+     .text-truncate-sm{
+         overflow: hidden;
+         text-overflow: ellipsis;
+         white-space: nowrap;
+     }
     .main-nav .nav-link{
         font-size: .6rem!important;
     }
+     .news-responsive-text-title{
+         font-size:1.3rem!important;
+     }
     .avatar-wraper{
         min-width: 215px!important;
         max-width: 215px!important;
