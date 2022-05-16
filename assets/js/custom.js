@@ -98,6 +98,5 @@ navbarTogglerBtn.addEventListener('click',handleToggler)
 // owl
 
 $(document).ready(function(){
-    console.log(initOwl)
     owl.owlCarousel(initOwl);
 });
